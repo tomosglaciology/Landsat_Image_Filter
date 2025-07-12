@@ -14,7 +14,7 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 
 - ✅ Renames bands across different Landsat sensors for consistency.
 
-- ✅ Displays both false-color and true-color composites for quick visualization.
+- ✅ Displays both false-color and true-color composites for quick visualisation.
 
 - ✅ Exports filtered image collections to Google Drive using [`geetools`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
 
