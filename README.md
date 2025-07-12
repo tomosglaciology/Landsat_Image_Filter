@@ -12,11 +12,11 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
   - Land cloud cover
   - WRS path and row
 
-- ✅ Renames bands across different Landsat sensors for consistency
+- ✅ Renames bands across different Landsat sensors for consistency.
 
 - ✅ Displays both false-color and true-color composites for quick visualization.
 
-- ✅ Exports filtered image collections to Google Drive using [`geetools`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch)
+- ✅ Exports filtered image collections to Google Drive using [`geetools`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
 
 ## 🛠 Requirements
 
