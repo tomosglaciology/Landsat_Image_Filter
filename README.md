@@ -5,17 +5,18 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 
 ##  Features
 
-- ✅ Filters Landsat 4–9 imagery by:
+- Filters Landsat 4–9 imagery by:
+  - Geometry
   - Date range (start and end year, month, day)
   - Image cloud cover
   - Land cloud cover
   - WRS path and row
 
-- ✅ Renames bands across different Landsat sensors for consistency.
+- Renames bands across different Landsat sensors for consistency.
 
-- ✅ Displays both false-color and true-color composites for quick visualisation.
+- Displays both false-color and true-color composites for quick visualisation.
 
-- ✅ Exports filtered Image Collection to Google Drive using [`batch`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
+- Exports filtered Image Collection to Google Drive using [`batch`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
 
 ##  Requirements
 
