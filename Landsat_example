@@ -12,9 +12,9 @@ var funcs = require('users/tomosdanielmorgan/EarthObservation:Landsats');
 // geometry, cloud cover thresholds, and date range (2020-2024, January to February, 1st-28th)
 // Change funcs. based on your requirements (see README.md file)
 var all = funcs.allLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 28)
-  // Optional: filter by WRS path and row // if not known or needed.
-  .filter(ee.Filter.eq('WRS_PATH', 231))
-  .filter(ee.Filter.eq('WRS_ROW', 94))
+  // Optional: filter by WRS path and row  remove // if known or use WRS_PATH and WRS_ROW after printing the ImageCollection
+  //.filter(ee.Filter.eq('WRS_PATH', 231))
+  //.filter(ee.Filter.eq('WRS_ROW', 94))
   // Select bands B2–B7 and B10, Common bands renamed across Landsat 4-9 to match.
   .select(['B[2-7]', 'B10']);
 
