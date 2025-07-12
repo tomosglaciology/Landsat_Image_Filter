@@ -20,7 +20,7 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 ## 🛠 Requirements
 
 - [Google Earth Engine](https://earthengine.google.com/) account
-- Enable the following Earth Engine user modules:
+- Require the following Earth Engine user modules:
   - `users/tomosdanielmorgan/EarthObservation:Landsats`
   - `users/fitoprincipe/geetools:batch`
 - A defined `geometry` variable (either drawn or uploaded in GEE).
