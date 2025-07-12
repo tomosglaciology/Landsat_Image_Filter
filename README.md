@@ -24,7 +24,7 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 - Enable the following Earth Engine user modules:
   - `users/tomosdanielmorgan/EarthObservation:Landsats`
   - `users/fitoprincipe/geetools:batch`
-- A defined `geometry` variable (either drawn or coded in GEE).
+- A defined `geometry` variable (either drawn or uploaded in GEE).
 - Optional: A defined WRS path/row.
 
 ## 🚀 Usage
