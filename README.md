@@ -32,10 +32,6 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 2. Paste the contents of [`landsat_example`](https://github.com/tomosglaciology/Landsat_Image_Filter/blob/main/Landsat_example) into a new script.
 3. Define your area of interest (AOI) by setting a `geometry` variable.
 4. Change data filter and WRS path/row to your AOI.
-   
-## 🔧 Filtering Options with `funcs`
-
-A summary of the available filtering functions in the custom `funcs` module:
 
 ## 🔧 Filtering Options with `funcs`
 
