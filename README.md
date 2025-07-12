@@ -37,13 +37,17 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 
 A summary of the available filtering functions in the custom `funcs` module:
 
-| Function | Description |
-|----------|-------------|
-| `funcs.allLandsat` | Filters **Landsat 4–9** |
-| `funcs.EarlyLandsat` | Filters **Landsat 4, 5, and 7** |
-| `funcs.NewLandsat` | Filters **Landsat 8 and 9** |
-| `funcs.Landsat4` | Filters only **Landsat 4** |
-| `funcs.Landsat5` | Filters only **Landsat 5** |
-| `funcs.Landsat7` | Filters only **Landsat 7** |
-| `funcs.Landsat8` | Filters only **Landsat 8** |
-| `funcs.Landsat9` | Filters only **Landsat 9** |
+## 🔧 Filtering Options with `funcs`
+
+A summary of the filtering functions available in the `funcs` module, and the associated Landsat data availability:
+
+| Function              | Description                      | Data Availability      |
+|-----------------------|----------------------------------|------------------------|
+| `funcs.allLandsat`    | Filters **Landsat 4–9**          | 1982 – Present         |
+| `funcs.EarlyLandsat`  | Filters **Landsat 4, 5, and 7**  | 1982 – 2025  |
+| `funcs.NewLandsat`    | Filters **Landsat 8 and 9**      | 2013 – Present  |
+| `funcs.Landsat4)`    | Filters only **Landsat 4**       | 1982 – 1993            |
+| `funcs.Landsat5`    | Filters only **Landsat 5**       | 1984 – 2013            |
+| `funcs.Landsat7`    | Filters only **Landsat 7**       | 1999 – 2025 *(note: scan line issues from 2003)* |
+| `funcs.Landsat8`    | Filters only **Landsat 8**       | 2013 – Present         |
+| `funcs.Landsat9`    | Filters only **Landsat 9**       | 2021 – Present         |
