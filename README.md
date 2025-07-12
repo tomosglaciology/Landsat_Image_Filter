@@ -40,9 +40,9 @@ A summary of the available filtering functions in the custom `funcs` module:
 
 | Function | Description |
 |----------|-------------|
-| `funcs.allLandsat` | Filters **Landsat 4–9** (all sensors combined) |
-| `funcs.EarlyLandsat` | Filters **Landsat 4, 5, and 7** only |
-| `funcs.NewLandsat` | Filters **Landsat 8 and 9** only |
+| `funcs.allLandsat` | Filters **Landsat 4–9** |
+| `funcs.EarlyLandsat` | Filters **Landsat 4, 5, and 7** |
+| `funcs.NewLandsat` | Filters **Landsat 8 and 9** |
 | `funcs.landsat4` | Filters only **Landsat 4** |
 | `funcs.landsat5` | Filters only **Landsat 5** |
 | `funcs.landsat7` | Filters only **Landsat 7** |
