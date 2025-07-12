@@ -33,3 +33,18 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 2. Paste the contents of `landsat_example` into a new script.
 3. Define your area of interest (AOI) by setting a `geometry` variable.
 4. Change data filter and WRS path/row to your AOI.
+   
+## 🔧 Filtering Options with `funcs`
+
+A summary of the available filtering functions in the custom `funcs` module:
+
+| Function | Description |
+|----------|-------------|
+| `funcs.allLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters **Landsat 4–9** (all sensors combined) |
+| `funcs.EarlyLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters **Landsat 4, 5, and 7** only |
+| `funcs.NewLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters **Landsat 8 and 9** only |
+| `funcs.landsat4(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 4** |
+| `funcs.landsat5(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 5** |
+| `funcs.landsat7(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 7** |
+| `funcs.landsat8(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 8** |
+| `funcs.landsat9(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 9** |
