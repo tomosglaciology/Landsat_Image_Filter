@@ -1,7 +1,8 @@
 
 # 🌍 Google Earth Engine Landsat 4–9 Filter and Batch Export
 
-This repository contains a Google Earth Engine (GEE) script to filter, visualise, and batch download Landsat 4-9 multispectral satellite imagery over a defined area and time range. Co-developed with [`iamdonovan`](https://github.com/iamdonovan). Our script uses [`geetools`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch) produced by [`fitoprincipe`](https://github.com/fitoprincipe).
+This repository contains a Google Earth Engine (GEE) script to filter, visualise, and batch download Landsat 4-9 multispectral satellite imagery over a defined area and time range. Co-developed with [`iamdonovan`](https://github.com/iamdonovan). Our script uses [`geetools-code-editor
+/batch`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch) produced by [`fitoprincipe`](https://github.com/fitoprincipe).
 
 ## 📦 Features
 
@@ -15,7 +16,8 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 
 - ✅ Displays both false-color and true-color composites for quick visualisation.
 
-- ✅ Exports filtered image collections to Google Drive using [`geetools`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
+- ✅ Exports filtered image collections to Google Drive using [geetools-code-editor
+/batch`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
 
 ## 🛠 Requirements
 
