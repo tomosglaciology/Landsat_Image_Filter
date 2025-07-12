@@ -40,11 +40,11 @@ A summary of the available filtering functions in the custom `funcs` module:
 
 | Function | Description |
 |----------|-------------|
-| `funcs.allLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters **Landsat 4–9** (all sensors combined) |
-| `funcs.EarlyLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters **Landsat 4, 5, and 7** only |
-| `funcs.NewLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters **Landsat 8 and 9** only |
-| `funcs.landsat4(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 4** |
-| `funcs.landsat5(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 5** |
-| `funcs.landsat7(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 7** |
-| `funcs.landsat8(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 8** |
-| `funcs.landsat9(geometry, 10, 10, 2020, 2024, 1, 2, 1, 31)` | Filters only **Landsat 9** |
+| `funcs.allLandsat` | Filters **Landsat 4–9** (all sensors combined) |
+| `funcs.EarlyLandsat` | Filters **Landsat 4, 5, and 7** only |
+| `funcs.NewLandsat` | Filters **Landsat 8 and 9** only |
+| `funcs.landsat4` | Filters only **Landsat 4** |
+| `funcs.landsat5` | Filters only **Landsat 5** |
+| `funcs.landsat7` | Filters only **Landsat 7** |
+| `funcs.landsat8` | Filters only **Landsat 8** |
+| `funcs.landsat9` | Filters only **Landsat 9** |
