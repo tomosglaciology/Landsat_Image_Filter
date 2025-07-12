@@ -1,7 +1,7 @@
 
-# 🌍 Landsat Image Filter
+# 🌍 GEE Landsat 4–9 Filter and Batch Export Script
 
-This repository contains a Google Earth Engine (GEE) script to filter, visualise, and batch download Landsat 4-9 multispectral satellite imagery over a defined area and time range. Co-Developed with [`iamdonovan`](https://github.com/iamdonovan).
+This repository contains a Google Earth Engine (GEE) script to filter, visualise, and batch download Landsat 4-9 multispectral satellite imagery over a defined area and time range. Co-developed with [`iamdonovan`](https://github.com/iamdonovan).
  
 
 ## 📦 Features
