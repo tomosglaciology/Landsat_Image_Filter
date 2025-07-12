@@ -16,7 +16,7 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 
 - ✅ Displays both false-color and true-color composites for quick visualisation.
 
-- ✅ Exports filtered image collections to Google Drive using [geetools-code-editor
+- ✅ Exports filtered image collections to Google Drive using [`geetools-code-editor
 /batch`](https://github.com/fitoprincipe/geetools-code-editor/blob/master/batch).
 
 ## 🛠 Requirements
