@@ -42,7 +42,7 @@ A summary of the filtering functions available in the `funcs` module, and the as
 | `funcs.allLandsat`    | Filters **Landsat 4–9**          | 1982 – Present         |
 | `funcs.EarlyLandsat`  | Filters **Landsat 4, 5, and 7**  | 1982 – 2025  *(See individual Data Availability for Landsat 4, 5 and 7)*|
 | `funcs.NewLandsat`    | Filters **Landsat 8 and 9**      | 2013 – Present  |
-| `funcs.Landsat4)`    | Filters only **Landsat 4**       | 1982 – 1993            |
+| `funcs.Landsat4`    | Filters only **Landsat 4**       | 1982 – 1993            |
 | `funcs.Landsat5`    | Filters only **Landsat 5**       | 1984 – 2013            |
 | `funcs.Landsat7`    | Filters only **Landsat 7**       | 1999 – 2025 *(Scan Line Corrector failure after May 2003 )* |
 | `funcs.Landsat8`    | Filters only **Landsat 8**       | 2013 – Present         |
