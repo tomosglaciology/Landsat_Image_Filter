@@ -1,0 +1,42 @@
+// Example geometry 
+var geometry = ee.Geometry.Polygon(
+  [[[-73.65102255169843, -48.59161279294259],
+    [-73.65102255169843, -49.24855038507996],
+    [-71.92891561810468, -49.24855038507996],
+    [-71.92891561810468, -48.59161279294259]]], null, false);
+
+// Import Landsat image filter function
+var funcs = require('users/tomosdanielmorgan/EarthObservation:Landsats');
+
+// Load Landsat 4–9 image collection using filters:
+// geometry, cloud cover thresholds, and date range (2020-2024, January to February, 1st-28th)
+var all = funcs.allLandsat(geometry, 10, 10, 2020, 2024, 1, 2, 1, 28)
+  // Optional: filter by WRS path and row // if not known or needed.
+  .filter(ee.Filter.eq('WRS_PATH', 231))
+  .filter(ee.Filter.eq('WRS_ROW', 94))
+  // Select bands B2–B7 and B10, Common bands renamed across Landsat 4-9 to match.
+  .select(['B[2-7]', 'B10']);
+
+// Print image collection 
+print(all);
+
+// Center the map on the geometry
+Map.centerObject(geometry, 10);
+
+// Load and clip a sample Landsat 8 image to the geometry
+var example = ee.Image('LANDSAT/LC08/C02/T1_TOA/LC08_231094_20210130').clip(geometry);
+
+// Add false color composite to map (NIR, Red, Green)
+Map.addLayer(example, {bands: ['B5', 'B4', 'B3'], min: 0, max: 0.6}, 'False Colour (B5, B4, B3)');
+
+// Add true color composite to map (Red, Green, Blue)
+Map.addLayer(example, {bands: ['B4', 'B3', 'B2'], min: 0, max: 0.6}, 'True Colour (B4, B3, B2)');
+
+// Import geetools batch module and export image collection to Google Drive
+var batches = require('users/fitoprincipe/geetools:batch');
+batches.Download.ImageCollection.toDrive(all, 'Landsat_Example', {
+  scale: 30,
+  crs: 'epsg:32718',
+  maxPixels: 1e13,
+  region: geometry
+});
