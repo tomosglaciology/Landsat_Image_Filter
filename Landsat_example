@@ -24,14 +24,14 @@ print(all);
 // Center the map on the geometry
 Map.centerObject(geometry, 10);
 
-// Load and clip a sample Landsat 8 image to the geometry
+// Load and clip a sample Landsat 8 image to the geometry from the ImageCollection >>
 var example = ee.Image('LANDSAT/LC08/C02/T1_TOA/LC08_231094_20210130').clip(geometry);
 
 // Add false color composite to map (NIR, Red, Green)
-Map.addLayer(example, {bands: ['B5', 'B4', 'B3'], min: 0, max: 0.6}, 'False Colour (B5, B4, B3)');
+Map.addLayer(example, {bands: ['B5', 'B4', 'B3'], min: 0, max: 0.6}, 'False Colour');
 
 // Add true color composite to map (Red, Green, Blue)
-Map.addLayer(example, {bands: ['B4', 'B3', 'B2'], min: 0, max: 0.6}, 'True Colour (B4, B3, B2)');
+Map.addLayer(example, {bands: ['B4', 'B3', 'B2'], min: 0, max: 0.6}, 'True Colour');
 
 // Import geetools batch module and export image collection to Google Drive
 var batches = require('users/fitoprincipe/geetools:batch');
