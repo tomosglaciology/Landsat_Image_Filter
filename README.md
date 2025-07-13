@@ -8,8 +8,8 @@ This repository contains a Google Earth Engine (GEE) script to filter, visualise
 - Filters Landsat 4–9 imagery by:
   - Geometry
   - Date range (start and end year, month, day)
-  - Image cloud cover
-  - Land cloud cover
+  - Image cloud cover %
+  - Land cloud cover %
   - WRS path and row
 
 - Renames bands across different Landsat sensors for consistency.
